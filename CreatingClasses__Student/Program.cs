@@ -2,6 +2,7 @@
 
 namespace CreatingStudent
 {
+    //создания каркаса для класса студент
     class Student
     {
         public Guid id;
@@ -13,6 +14,7 @@ namespace CreatingStudent
     }
     internal class Program
     {
+        //описание студента (можно подвязать базу данных)
         static Student GetStudent()
         {
             Student student = new Student();
@@ -26,6 +28,7 @@ namespace CreatingStudent
 
             return student;
         }
+        //метод для вывода всей инфы о студенте
         static void Print(Student student)
         {
             Console.WriteLine($"ФИО: {student.lastName} {student.firstName} {student.middleName}");
